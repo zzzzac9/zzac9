@@ -1,0 +1,57 @@
+﻿<html>
+<body >
+  <input type="radio" id="r1" name="W" checked="true" onclick="changeImg()">W/L 300/1000 <br>
+  <input type="radio" id="r2" name="W" onclick="changeImg()">W/L  600/1000 <br>
+  <input type="radio" id="r3" name="W" onclick="changeImg()" >W/L  1200/1000 <br>
+  
+  <div style="position: relative;">
+     <img id="img1" src="https://th.bing.com/th/id/R.e1707c345d5ac10c80a674030e606643?rik=pOsTg5KBoLuNvw&riu=http%3a%2f%2fwww.snut.fr%2fwp-content%2fuploads%2f2015%2f08%2fimage-de-paysage.jpg&ehk=1O5SWKkGpZ8yU%2b%2fAnLXG1v8k6BKxgyiXgHbOWBW1ir0%3d&risl=1&pid=ImgRaw&r=0"
+  width="512" height="512"
+          style="position: absolute;  left: 0px; top:0px; z-index: 1;" />
+     <svg width="512" height="512" id="sr"
+          style="position: absolute;  left: 0px; top:0px; z-index: 2;" >
+        <circle x="150" cx="260" cy="200" r="60" stroke="blue" stroke-width="7" fill="none" />
+        <text x="0" y="15" fill="red">i am 110316116</text>
+        <ellipse cx="200" cy="80" rx="100" ry="50" style="fill:yellow;stroke:purple;stroke-width:2" />
+        <line y = 100 x1="0" y1="0" x2="200" y2="200" style="stroke:rgb(255,0,0);stroke-width:2" />
+        <rect x="60" y="250" width="100" height="30" style="fill:rgb(0,0,255);stroke-width:3;stroke:rgb(0,0,0)" />
+
+     </svg> 
+         
+  </div>
+</body>
+    <script type="text/javascript">
+    
+    function changeImg() { 
+    //  jpgDir/300-1000.PNG" 
+
+      //  alert("aaa");
+        if (document.getElementById("r1").checked == true) {
+                document.getElementById("img1").width = "300"
+                document.getElementById("img1").heiht = "1000"
+                document.getElementById("sr").width = "300"
+                document.getElementById("sr").heiht = "1000"
+                document.getElementById("img1").src = "https://th.bing.com/th/id/R.e1707c345d5ac10c80a674030e606643?rik=pOsTg5KBoLuNvw&riu=http%3a%2f%2fwww.snut.fr%2fwp-content%2fuploads%2f2015%2f08%2fimage-de-paysage.jpg&ehk=1O5SWKkGpZ8yU%2b%2fAnLXG1v8k6BKxgyiXgHbOWBW1ir0%3d&risl=1&pid=ImgRaw&r=0"     
+            }
+
+        if (document.getElementById("r2").checked == true) {
+                document.getElementById("img1").width="600"
+                document.getElementById("img1").heiht="1000"
+                document.getElementById("sr").width="600"
+                document.getElementById("sr").heiht="1000"
+                document.getElementById("img1").src = "https://th.bing.com/th/id/R.e1707c345d5ac10c80a674030e606643?rik=pOsTg5KBoLuNvw&riu=http%3a%2f%2fwww.snut.fr%2fwp-content%2fuploads%2f2015%2f08%2fimage-de-paysage.jpg&ehk=1O5SWKkGpZ8yU%2b%2fAnLXG1v8k6BKxgyiXgHbOWBW1ir0%3d&risl=1&pid=ImgRaw&r=0" 
+            }
+
+        if (document.getElementById("r3").checked == true) {
+                document.getElementById("img1").width = "1200"
+                document.getElementById("img1").heiht = "1000"
+                document.getElementById("sr").width = "1200"
+                document.getElementById("sr").heiht = "1000"
+                document.getElementById("img1").src = "https://th.bing.com/th/id/R.e1707c345d5ac10c80a674030e606643?rik=pOsTg5KBoLuNvw&riu=http%3a%2f%2fwww.snut.fr%2fwp-content%2fuploads%2f2015%2f08%2fimage-de-paysage.jpg&ehk=1O5SWKkGpZ8yU%2b%2fAnLXG1v8k6BKxgyiXgHbOWBW1ir0%3d&risl=1&pid=ImgRaw&r=0" 
+            }  
+
+        }        
+
+    </script>
+
+</html>
